@@ -38,12 +38,12 @@ const menuData: Menu[] = [
     path: "#",
     newTab: false,
   },
-  {
-    id: 7,
-    title: "LOGIN",
-    path: "#",
-    newTab: false,
-  },
+  // {
+  //   id: 7,
+  //   title: "LOGIN",
+  //   path: "#",
+  //   newTab: false,
+  // },
   
   // {
   //   id: 4,

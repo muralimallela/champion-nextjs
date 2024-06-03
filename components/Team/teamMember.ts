@@ -5,7 +5,7 @@ export const teamMembers: TeamMember[] = [
     {
         name: 'Abdul Khadeer',
         role: 'Frontend Developer',
-        image: '/images/team-1.jpg',
+        image: '/images/abdul.jpg',
         socialLinks: [
             { href: '#', icon: faFacebook },
             { href: '#', icon: faXTwitter },
@@ -17,7 +17,7 @@ export const teamMembers: TeamMember[] = [
     {
         name: 'Manjunath',
         role: 'Editor & Designer',
-        image: '/images/team-2.jpg',
+        image: '/images/manjunath.jpg',
         socialLinks: [
             { href: '#', icon: faFacebook },
             { href: '#', icon: faXTwitter },
@@ -29,7 +29,7 @@ export const teamMembers: TeamMember[] = [
     {
         name: 'Murali Krishna',
         role: 'Backend Developer',
-        image: '/images/team-3.jpg',
+        image: '/images/murali.jpg',
         socialLinks: [
             { href: '#', icon: faFacebook },
             { href: '#', icon: faXTwitter },
@@ -41,7 +41,7 @@ export const teamMembers: TeamMember[] = [
     {
         name: 'Pranay Kumar',
         role: 'Backend Developer',
-        image: '/images/team-3.jpg',
+        image: '/images/pranay.jpg',
         socialLinks: [
             { href: '#', icon: faFacebook },
             { href: '#', icon: faXTwitter },

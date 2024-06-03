@@ -2,9 +2,23 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { AwaitedReactNode, JSXElementConstructor, Key, ReactElement, ReactNode, ReactPortal, SetStateAction, useEffect, useState } from "react";
+
+import {
+  AwaitedReactNode,
+  JSXElementConstructor,
+  Key,
+  ReactElement,
+  ReactNode,
+  ReactPortal,
+  SetStateAction,
+  useEffect,
+  useState,
+} from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
+
+import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+
 // import TypedComponent from "./typingHeader";
 import { UrlObject } from "url";
 const Header = () => {
@@ -42,14 +56,14 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header left-0 top-0 z-40 flex w-full items-center ${
+        className={`header right-0 top-0 z-40 flex w-full items-center ${
           sticky
             ? "fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition dark:bg-background/50 dark:shadow-sticky-dark"
             : "absolute bg-transparent"
         }`}
       >
         <div className="container">
-          <div className="relative  -mx-4 flex items-center justify-center">
+          <div className="relative  -mx-4 flex items-center justify-between">
             <div className="w-20  max-w-full px-4 xl:mr-12">
               <Link
                 href="/"
@@ -73,7 +87,7 @@ const Header = () => {
                 /> */}
               </Link>
             </div>
-            <div className="flex w-full items-center justify-between px-4 text-base">
+            <div className="flex w-full items-center justify-end px-4 text-base">
               <div>
                 <button
                   onClick={navbarToggleHandler}
@@ -157,7 +171,17 @@ const Header = () => {
                         )}
                       </li>
                     ))}
-                    
+                    <li className="group relative pr-6">
+                      <div className="flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6">
+                        <SignedOut >
+                        <SignInButton />
+                      </SignedOut>
+                      <SignedIn>
+                        <UserButton />
+                      </SignedIn>
+                        
+                      </div>
+                    </li>
                   </ul>
                 </nav>
               </div>

@@ -20,7 +20,7 @@ export default function EmblaCarousel() {
         <span className="text-primary">our Customers</span>
       </h1>
       <div className="lg:container lg:px-12">
-        <div className="embla inner-shadow" ref={emblaRef} >
+        <div className="embla inner-shadow py-3" ref={emblaRef} >
           <div className="embla__container py-6">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="embla__slide">
@@ -44,7 +44,7 @@ export default function EmblaCarousel() {
                       style={{ color: "green" }}
                     />
                   </div>
-                  <p className="dark:text-white/40">{testimonial.reviewContent}</p>
+                  <p  className="dark:text-white/40">{testimonial.reviewContent}</p>
                 </div>
               </div>
             ))}
