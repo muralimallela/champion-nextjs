@@ -4,6 +4,7 @@ import { services } from './services';
 import Image from 'next/image';
 import { JackInTheBox } from "react-awesome-reveal";
 import "animate.css"
+import Link from 'next/link';
 
 const ServiceSection: React.FC = () => {
   return (
@@ -30,9 +31,9 @@ const ServiceSection: React.FC = () => {
                   <p className="mt-4 text-gray-600 dark:text-white/50">{service.description}</p>
                 </div>
                 <div>
-                  <a href="#" className="text-blue-500 font-semibold hover:text-blue-400">
+                  <Link href={service.path} className="text-blue-500 font-semibold hover:text-blue-400">
                     Read More
-                  </a>
+                  </Link>
                 </div>
               </div>
               </JackInTheBox>
