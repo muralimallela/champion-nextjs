@@ -19,7 +19,8 @@ const config = {
     },
     extend: {
       boxShadow: {
-        'custom': '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
+        'custom': '0 8px 32px 0 rgba(3, 38, 135, 1)',
+        'custom-light': '0 8px 32px 0 rgba(3, 38, 135, 0.37)',
       },
       backdropBlur: {
         '3.5': '3.5px',

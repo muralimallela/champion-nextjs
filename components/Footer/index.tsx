@@ -218,7 +218,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="absolute right-0 top-14 z-[-1]">
-          <svg
+          {/* <svg
             width="55"
             height="99"
             viewBox="0 0 55 99"
@@ -289,7 +289,7 @@ const Footer = () => {
                 <stop offset="1" stopOpacity="0" />
               </radialGradient>
             </defs>
-          </svg>
+          </svg> */}
         </div>
         <div className="absolute bottom-24 left-0 z-[-1]">
           <svg
