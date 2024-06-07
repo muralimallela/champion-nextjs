@@ -2,7 +2,7 @@
 import React from "react";
 import { services } from "./services";
 import Image from "next/image";
-import { JackInTheBox } from "react-awesome-reveal";
+import { JackInTheBox} from "react-awesome-reveal";
 import "animate.css";
 import Link from "next/link";
 
@@ -25,7 +25,7 @@ const ServiceSection: React.FC = () => {
               key={index}
               className="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8 border border-transparent ml-0"
             >
-              <JackInTheBox>
+              <JackInTheBox duration={900} >
                 <Link href={service.path}>
                   <div className="mx-auto   dark:bg-background bg-white bg-opacity-10 dark:border dark:border-white/80 shadow-custom-light dark:shadow-custom backdrop-blur-3.5  border-white border-opacity-20 p-6 rounded-xl text-center">
                     <div className="mb-6">

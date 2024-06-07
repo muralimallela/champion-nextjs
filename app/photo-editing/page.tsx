@@ -1,12 +1,11 @@
-import React from 'react'
+"use client";
 
-function page() {
-  return (
-    <div className="mt-[200px] container text-center">
-        <h1 className='text-3xl font-bold mb-2'>Photo Editing</h1><br />
-        <p className="mt-4 text-gray-600">We are working on it</p>
-    </div>
-  )
-}
+import Image from "next/image";
+import { useState, useCallback } from "react";
+import Slider from "@/components/Photography/Slider";
 
-export default page
+const Page: React.FC = () => {
+  return <Slider />;
+};
+
+export default Page;
