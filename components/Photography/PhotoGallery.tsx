@@ -40,7 +40,7 @@ const PhotoGallery: React.FC = () => {
   };
 
   return (
-    <div className="mt-[200px] container  ">
+    <div className="mt-[200px] mb-[50px] container  ">
       <div className=" grid-container  mt-5">
         {photos.map((photo, index) => (
           <div
