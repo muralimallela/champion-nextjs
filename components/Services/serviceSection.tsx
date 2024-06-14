@@ -8,11 +8,10 @@ import Link from "next/link";
 
 const ServiceSection: React.FC = () => {
   return (
-    <section className="lg:container mt-[160px] mx-auto py-12 bg-white dark:bg-background ">
-      <div className="h-px w-full mb-12 bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
+    <section className="lg:container mt-[80px] mx-auto py-12 bg-white dark:bg-background ">
       <div className="container mx-auto">
         <div className="text-center mb-12 ">
-          <h2 className="text-4xl font-bold mt-[80px] ">
+          <h2 className="text-4xl font-bold ">
             Our <span className="text-blue-500">Services</span>
           </h2>
           <p className="mt-4 text-gray-600">

@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from "react";
 import Modal from "react-modal";
-import '@/app/photography/PhotoGallery.css';
+
 
 interface Photo {
   src: string;
@@ -40,24 +40,21 @@ const PhotoGallery: React.FC = () => {
   };
 
   return (
-    <div className="mt-[200px] container  ">
-      <div className=" grid-container  mt-5">
+    <div className="mt-[200px] container">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-5">
         {photos.map((photo, index) => (
-          <div>
-            <div
+          <div
             key={index}
-            className="cursor-pointer dark:shadow-custom shadow-custom-light"
+            className="cursor-pointer"
             onClick={() => openModal(photo)}
           >
             <img
               src={photo.src}
               alt={photo.title}
-              className="lg:w-64"
+              className="w-full h-auto"
             />
-            <p className="">{photo.title}</p>
-          </div>  
+            <p className="mt-2 text-center">{photo.title}</p>
           </div>
-          
         ))}
       </div>
 

@@ -127,7 +127,7 @@ const Contact: React.FC = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
             <div
-              className="mb-12 rounded-xl bg-white px-8 py-11 shadow-three dark:bg-background lg:border-2 border-white/80 dark:shadow-custom shadow-custom-light sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
+              className="mb-12 rounded-xl bg-white px-8 py-11 shadow-three dark:bg-background lg:border-4 border-white/80 dark:shadow-custom shadow-custom-light sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
               data-wow-delay=".15s"
             >
               <h2 className="mb-3 text-2xl font-bold text-primary sm:text-3xl lg:text-2xl xl:text-3xl">
