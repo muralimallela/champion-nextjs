@@ -4,10 +4,11 @@ import TestimonialsSection from "@/components/Testimonials/testimonialsSection";
 import AboutSection from "@/components/About/aboutSection";
 import Contact from "@/components/contact/contactSection";
 import { Divider } from "primereact/divider";
+import Hero from "@/components/Hero";
 export default function Home() {
   return (
     <>
-      {/* <Hero/> */}
+      <Hero/>
       <ServiceSection />
       <AboutSection />
       <TeamSection />
