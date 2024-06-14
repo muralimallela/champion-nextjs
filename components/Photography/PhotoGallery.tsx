@@ -1,7 +1,7 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from "react";
 import Modal from "react-modal";
-import '@/app/photography/PhotoGallery.css';
+import "@/app/photography/PhotoGallery.css";
 
 interface Photo {
   src: string;
@@ -43,21 +43,14 @@ const PhotoGallery: React.FC = () => {
     <div className="mt-[200px] mb-[50px] container  ">
       <div className=" grid-container  mt-5">
         {photos.map((photo, index) => (
-          <div>
-            <div
+          <div
             key={index}
             className="cursor-pointer dark:shadow-custom shadow-custom-light"
             onClick={() => openModal(photo)}
           >
-            <img
-              src={photo.src}
-              alt={photo.title}
-              className="lg:w-64"
-            />
+            <img src={photo.src} alt={photo.title} className="lg:w-64" />
             <p className="">{photo.title}</p>
-          </div>  
           </div>
-          
         ))}
       </div>
 
