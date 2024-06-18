@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Modal from "react-modal";
 import "@/app/photography/PhotoGallery.css";
+import Image from "next/image";
 
 interface Photo {
   src: string;
@@ -48,7 +49,7 @@ const PhotoGallery: React.FC = () => {
             className="cursor-pointer dark:shadow-custom shadow-custom-light"
             onClick={() => openModal(photo)}
           >
-            <img src={photo.src} alt={photo.title} className="lg:w-64" />
+            <Image src={photo.src} alt={photo.title} className="lg:w-64" width={200} height={200} />
             <p className="">{photo.title}</p>
           </div>
         ))}
@@ -63,9 +64,11 @@ const PhotoGallery: React.FC = () => {
           overlayClassName="overlay"
         >
           <div className="">
-            <img
+            <Image
               src={currentPhoto.src}
               alt={currentPhoto.title}
+              width={200}
+              height={200}
               className="w-full h-auto"
             />
             {/* <h2 className="mt-4 text-blue-400">{currentPhoto.title}</h2>

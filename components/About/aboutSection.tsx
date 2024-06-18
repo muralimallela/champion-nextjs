@@ -4,7 +4,7 @@ import React from "react";
 import { Bounce, Slide, AttentionSeeker } from "react-awesome-reveal";
 const AboutSection: React.FC = () => {
   return (
-    <section className="lg:container py-10 dark:text-white">
+    <section className="lg:container py-10 dark:text-white mb-20">
         <div className="h-px w-full mb-12 bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
       <div className="container mx-auto">
         <div className="heading_container text-center mb-12">
