@@ -43,8 +43,8 @@ export default function RootLayout({
             
             <Footer />
             <ScrollTop
-              className="h-10 w-9 text-white bg-blue-600/90 rounded-lg "
-              icon={<FontAwesomeIcon icon="fas fa-chevron-up" className="h-6" />}
+              className="h-10 w-9 text-white bg-red-600/90 rounded-lg "
+              icon={<FontAwesomeIcon icon={faArrowUp} className="h-6" />}
             />
           </ThemeProvider>
         </body>
