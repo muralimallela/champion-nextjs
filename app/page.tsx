@@ -5,6 +5,7 @@ import AboutSection from "@/components/About/aboutSection";
 import Contact from "@/components/contact/contactSection";
 import { Divider } from "primereact/divider";
 import Hero from "@/components/Hero";
+import WhyChooseUs from "@/components/WhyChooseUs/WhyChooseUs";
 export default function Home() {
   return (
     <>

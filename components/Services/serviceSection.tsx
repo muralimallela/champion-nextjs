@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const ServiceSection: React.FC = () => {
   return (
-    <section className="lg:container mt-[160px] mx-auto py-12 bg-white dark:bg-background ">
+    <section className="lg:container lg:mt-[160px] sm:mt-1 mx-auto py-12 bg-white dark:bg-background ">
       <div className="h-px w-full mb-12 bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
       <div className="container mx-auto">
         <div className="text-center mb-12 ">
