@@ -9,9 +9,9 @@ export async function POST(request: any) {
 
   try {
     const admin = await resend.emails.send({
-      from: 'Champion <no-reply@muralikrishna.online>',
+      from: 'Champion <championsdesignwork@gmail.com>',
       to: ['championsdesignwork@gmail.com'],
-      subject: name+' submitted a new form ',
+      subject: name+' send a new message ',
       text: "Hello",
       react: AdminEmailTemplate({ Name: name, Email: email, Phone: phone, Message: message }),
     });
@@ -21,7 +21,7 @@ export async function POST(request: any) {
     }
 
     const user = await resend.emails.send({
-      from: 'Champion <no-reply@muralikrishna.online>',
+      from: 'Champion <championsdesignwork@gmail.com>',
       to: email,
       subject: 'Thank you',
       text: "Hello",

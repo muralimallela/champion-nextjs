@@ -11,7 +11,11 @@ interface Photo {
   description: string;
 }
 
-const PhotoGallery: React.FC = () => {
+interface PhotoGalleryProps {
+  end_url: string;
+}
+
+const PhotoGallery: React.FC<PhotoGalleryProps> = ({ end_url }) => {
   const [photos, setPhotos] = useState<Photo[]>([]);
   const [isOpen, setIsOpen] = useState(false);
   const [currentPhoto, setCurrentPhoto] = useState<Photo | null>(null);
@@ -19,7 +23,7 @@ const PhotoGallery: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/api/photos");
+        const response = await fetch('/api/'+end_url);
         const data = await response.json();
         setPhotos(data);
       } catch (error) {
@@ -28,7 +32,7 @@ const PhotoGallery: React.FC = () => {
     };
 
     fetchData();
-  }, []);
+  }, [end_url]);
 
   const openModal = (photo: Photo) => {
     setCurrentPhoto(photo);
@@ -41,8 +45,8 @@ const PhotoGallery: React.FC = () => {
   };
 
   return (
-    <div className="mt-[200px] mb-[50px] container  ">
-      <div className=" grid-container  mt-5">
+    <div className="mt-[200px] mb-[50px] container">
+      <div className="grid-container mt-5">
         {photos.map((photo, index) => (
           <div
             key={index}
@@ -50,7 +54,7 @@ const PhotoGallery: React.FC = () => {
             onClick={() => openModal(photo)}
           >
             <Image src={photo.src} alt={photo.title} className="lg:w-64" width={200} height={200} />
-            <p className="">{photo.title}</p>
+            <p>{photo.title}</p>
           </div>
         ))}
       </div>
@@ -63,7 +67,7 @@ const PhotoGallery: React.FC = () => {
           className="modal"
           overlayClassName="overlay"
         >
-          <div className="">
+          <div>
             <Image
               src={currentPhoto.src}
               alt={currentPhoto.title}
