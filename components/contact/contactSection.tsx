@@ -124,7 +124,7 @@ const Contact: React.FC = () => {
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
       <div className="lg:container">
         <div className="h-px w-full mb-12 bg-gradient-to-r from-transparent via-[#D2D8E183] to-transparent dark:via-[#959CB183]"></div>
-        <div className="-mx-4 flex flex-wrap">
+        <div className="-mx-4 flex justify-center">
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
             <div
               className="mb-12 rounded-xl bg-white px-8 py-11 shadow-three dark:bg-background lg:border-2 border-white/80 dark:shadow-custom shadow-custom-light sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
